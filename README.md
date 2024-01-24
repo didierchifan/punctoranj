@@ -43,6 +43,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 4. Click on Stage icon (+) - on listed changes
 5. Add a Commit Message and click Commit Button
 6. In terminal push the new branch - git push origin branchname
-7. Once you pushed the branch go to github and create a Pull Request using your branch to Main Branch
-8. After the apporoval of the pull request is completed and merged, go back to VS Code and checkout (switch branch) to main Branch
-9. Once you are on main branch run git pull origin main in order to have the updated version on the main branch 
+7. Once you pushed the branch go to github and create a Pull Request using your branch to main Branch
+8. Make sure you add a reviewer to the PR
+9. After the apporoval of the pull request is completed and merged, go back to VS Code and checkout (switch branch) to main Branch
+10. Once you are on main branch run git pull origin main in order to have the updated version on the main branch
