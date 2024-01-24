@@ -34,3 +34,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## How to use GIT
+
+1. From main branch - create a new branc (git checkout -b branchname)
+2. Update your project - add new functionality to existing project
+3. Click on Source Control (under the search button)
+4. Click on Stage icon (+) - on listed changes
+5. Add a Commit Message and click Commit Button
+6. In terminal push the new branch - git push origin branchname
+7. Once you pushed the branch go to github and create a Pull Request using your branch to Main Branch
