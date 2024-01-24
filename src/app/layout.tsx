@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
-      <div>Ceva</div>
+      <div>Altceva</div>
     </html>
   );
 }
