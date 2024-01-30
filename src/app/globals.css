@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-.welcome-message {
+.main-title {
   color: orange;
   font-size: 6em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -16,18 +16,34 @@
 }
 
 .btn {
-  background-color: #222;
-  border-radius: 10px;
-  color: #fff;
   font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 2rem;
   font-weight: 700;
-  padding: 9px 20px 8px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  background-color: darkorange;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: none;
 }
 
-.btn:hover,
-.btn:focus {
-  opacity: 0.75;
+.btn:link {
+  text-decoration: none;
+}
+.btn:visited {
+  text-decoration: none;
+}
+.btn:hover {
+  text-decoration: none;
+}
+.btn:active {
+  text-decoration: none;
 }
 
 .navbar {

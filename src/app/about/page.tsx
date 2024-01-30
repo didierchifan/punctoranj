@@ -1,11 +1,12 @@
 import Link from "next/link";
+
 export default function About() {
   return (
     <>
       <Link href="/">
-        <button className="btn">X</button>
+        <div className="btn">X</div>
       </Link>
-      <div className="welcome-message">ABOUT</div>
+      <div className="main-title">ABOUT</div>
     </>
   );
 }
