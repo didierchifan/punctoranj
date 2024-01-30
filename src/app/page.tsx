@@ -1,95 +1,69 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <body>
+      <div className="hero">
+        <div className="container">
+          <div className="navbar">
+            <Link href="/about">
+              <div className="btn">A</div>
+            </Link>
+            <Link href="/contact">
+              <div className="btn">C</div>
+            </Link>
+          </div>
+
+          <div>
+            <p className="main-title">WELCOME TO PUNCTORANJ</p>
+          </div>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <section id="fulfilled" className="container">
+        <p className="section-title">PROJECTS</p>
+        <div className="section-projects">
+          <Link href="/projects/1" className="project">
+            CORESI-INCLUDE
+          </Link>
+          <Link href="/projects/2" className="project">
+            MONDELEZ OFFICE
+          </Link>
+          <Link href="/projects/3" className="project">
+            GHEORGHIENI 34
+          </Link>
+          <Link href="/projects/4" className="project">
+            RAILWAY STATIONS
+          </Link>
+          <Link href="/projects/5" className="project">
+            CTP ACCOMODATIONS-rendering
+          </Link>
+          <Link href="/projects/6" className="project">
+            HI-TECH CENTER-graphics
+          </Link>
+          <Link href="/projects/7" className="project">
+            PARISH HOUSE-tangible
+          </Link>
+          <Link href="/projects/8" className="project">
+            LONG-HOUSE-tangible
+          </Link>
+          <Link href="/projects/9" className="project">
+            GARDEN-HOUSE-tangible
+          </Link>
+          <Link href="/projects/10" className="project">
+            PAPERCLIP-competition
+          </Link>
+          <Link href="/projects/11" className="project">
+            PINGPONG+6-competition
+          </Link>
+          <Link href="/projects/12" className="project">
+            RELIGIOUS CENTER-competition
+          </Link>
+          <Link href="/projects/13" className="project">
+            BEYOND DWELLING-imagination
+          </Link>
+        </div>
+      </section>
+    </body>
   );
 }
