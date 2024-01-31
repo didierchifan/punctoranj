@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { projectList } from "@/data/projects";
 interface ProjectDetailsProps {
   params: {
     projectId: string;
@@ -7,15 +7,23 @@ interface ProjectDetailsProps {
 }
 
 export default function ProjectDetails(props: ProjectDetailsProps) {
+  const currentProject = projectList.find((project) => {
+    return project.slug === props.params.projectId;
+  });
+
+  if (!currentProject) {
+    return <p>Sorry, but your project does not exist</p>;
+  }
+
+  // if (currentProject.layout === LayoutType.CUSTOM)
+  //   return <div> Custom Layout </div>;
+
   return (
     <>
-      <Link href="/">
-        <button className="btn">X</button>
-      </Link>
-      <h1 className="main-title">
-        Details about project {props.params.projectId}
-      </h1>
-      ;
+      <div className="container">
+        <h1 className="main-title">{currentProject.name}</h1>
+        <p className="generic__text">{currentProject.text}</p>
+      </div>
     </>
   );
 }

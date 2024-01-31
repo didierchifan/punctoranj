@@ -1,7 +1,62 @@
+body {
+  background-color: #f3e6e3;
+}
 .container {
   width: 80%;
-  max-width: 1100px;
+  max-width: 1920px;
   margin: 0 auto;
+}
+.flex--3--cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 5rem;
+}
+
+.wrapper--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-content: center;
+  row-gap: 1.8rem;
+  column-gap: 1.8rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav--bar {
+  padding: 1rem 3rem 0 3rem;
+  height: 3rem;
+}
+
+.project--icon {
+  font-size: 10rem;
+  line-height: 1;
+  fill: black;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.project--icon__svg {
+  /* display: block; */
+  margin: 0;
+}
+
+.img--header {
+  width: 80%;
+  height: 80%;
+}
+
+.center_img {
+  text-align: center;
+}
+
+.generic__text {
+  text-align: justify;
 }
 
 .main-title {
@@ -15,46 +70,29 @@
   font-weight: 700;
 }
 
-.btn {
-  font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-  background-color: darkorange;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  border: none;
+.section-projects {
+  margin: 0 8rem 0 8rem;
 }
 
-.btn:link {
+.btn {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
   text-decoration: none;
+  color: #f46d0e;
 }
-.btn:visited {
-  text-decoration: none;
-}
-.btn:hover {
-  text-decoration: none;
-}
+
+.btn,
+.btn:link,
+.btn:visited,
+.btn:hover,
 .btn:active {
   text-decoration: none;
 }
 
-.navbar {
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-end;
-}
-
 .hero {
-  background-color: beige;
-  padding: 2rem 0 2rem 0;
+  padding: 0rem 0 6rem 0;
 }
 
 .section-title {
@@ -64,12 +102,6 @@
   text-align: center;
   font-weight: 700;
   font-size: 1.5rem;
-}
-
-.section-projects {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
 }
 
 .project {
