@@ -10,7 +10,7 @@ export default function ProjectGrid() {
           {projects.map((project) => (
             <div key={project.slug} className="project--icon">
               <Link href={`/projects/${project.slug}`}>
-                <project.image className="project--icon__svg" />
+                <project.logo className="project--icon__svg" />
               </Link>
             </div>
           ))}

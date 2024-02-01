@@ -5,11 +5,13 @@ export default function HeroGallery() {
     <div className="container">
       <div className="center_img">
         <Image
-          className="img--header"
-          src="/home-page-gallery/ctp-render-1.jpg"
-          width={500}
+          className="img--landing--header"
+          src="/home-page-gallery/ctp-render-01.webp"
+          width={1920}
           height={500}
           alt="Exterior rendering of an accomodation architectural project"
+          quality={100}
+          priority={true}
         />
         <div>
           <Image

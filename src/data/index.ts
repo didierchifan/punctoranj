@@ -4,41 +4,48 @@ import BeyondDwelling from "../assets/BeyondDwelling.svg";
 import Interview from "../assets/BeyondDwellingInterview.svg";
 import PaperClip from "../assets/Paperclip.svg";
 import LongHouse from "../assets/Restoration.svg";
+import Accomodations from "../assets/Accomodations.svg";
 
 export interface ProjectData {
-  image: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+  logo: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   title: string;
   slug: string;
 }
 
 const projects: ProjectData[] = [
   {
-    image: GardenHouse,
+    logo: Accomodations,
+    title: "CTP Accomodations",
+    slug: "accomodations",
+  },
+
+  {
+    logo: GardenHouse,
     title: "garden-house",
     slug: "garden-house",
   },
   {
-    image: PingPong,
+    logo: PingPong,
     title: "ping-pong",
-    slug: "ping-pong",
+    slug: "ping-pong6",
   },
   {
-    image: BeyondDwelling,
+    logo: BeyondDwelling,
     title: "beyond-dwelling",
     slug: "beyond-dwelling",
   },
   {
-    image: Interview,
+    logo: Interview,
     title: "interview",
     slug: "interview",
   },
   {
-    image: PaperClip,
+    logo: PaperClip,
     title: "paperclip",
     slug: "paperclip",
   },
   {
-    image: LongHouse,
+    logo: LongHouse,
     title: "longhouse",
     slug: "longhouse",
   },
